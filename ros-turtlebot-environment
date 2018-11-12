@@ -21,3 +21,5 @@ ros-indigo-ar-track-alvar-msgs
 
 ！！！更新下位机笔记本-ubuntu系统请用有线网络。
 
+具体步骤 参考ros-wiki：
+http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation
