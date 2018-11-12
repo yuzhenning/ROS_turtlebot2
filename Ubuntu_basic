@@ -1,0 +1,14 @@
+Ubuntu terminal basic command
+
+sudo shutdown -r now #立刻重启
+mkdir  #定义新目录
+cd     # 到主文件夹
+cd ..  # 注意中间有空格，代表到上一级文件夹
+cd /dir # 到特定文件夹
+
+ls    　#　显示目前文件夹内容
+gedit xx.c # 编辑某某 c文件 
+
+
+
+
