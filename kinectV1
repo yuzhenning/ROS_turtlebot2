@@ -1,0 +1,33 @@
+//test kinect v1 under ubuntu 14.04 system
+// copy from : https://blog.csdn.net/zhuquan945/article/details/60868183
+
+/*
+先说一下自己机器的运行环境：
+Ubuntu14.04
+kinect第一代
+另外还要注意的是openni、NITE、Sensor这三个包的版本必须匹配才能正常运行，我的版本分别是：
+OpenNI-Bin-Dev-Linux-x64-v1.5.7.10.tar
+NITE-Bin-Linux-x64-v1.5.2.23.tar
+SensorKinect093-Bin-Linux-x64-v5.1.2.1
+可以在我的网盘下载：http://pan.baidu.com/s/1hqHB10w 提取密码：wrmn
+--------------------- 
+作者：勇往直前的流浪刀客 
+来源：CSDN 
+原文：https://blog.csdn.net/zhuquan945/article/details/60868183 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+---------------------
+这三个软件包的安装要注意顺序：先安装openni，再安装Sensor，最后安装NITE。
+另外可以带-u参数卸载这些软件包重新安装$sudo ./install.sh -u，但是NITE里有专门的uninstall.sh可以运行它来卸载。*/
+
+//下载OpenNI-Bin-Dev-Linux-x64-v1.5.7.10.tar解压得到OpenNI-Bin-Dev-Linux-x64-v1.5.7.10文件夹，我把这三个包都放在home下面的Downloads目录下
+cd /Home/Downloads/OpenNI-Bin-Dev-Linux-x64-v1.5.7.10
+sudo ./install.sh
+ /*
+如果显示如下:
+Installing
+OpenNI
+........
+***
+DONE ***
+则安装成功
+*/
