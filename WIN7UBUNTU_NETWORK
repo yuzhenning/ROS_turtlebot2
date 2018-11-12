@@ -1,0 +1,20 @@
+# WIN7 和 UBUNTU 双系统情况下有上网问题。
+# https://www.jianshu.com/p/91037cee3145
+咳咳，根据我的实践和网友的分享，问题应该是出在DHCP上了；
+可能是从windows到ubuntu，网卡缓存了一些windows的配置信息，造成了系统间配置的冲突，DHCP 请求不成功。
+
+# 解决方法：
+case1：
+每次重启先关机再重启，或者中间断个电，听说有的网卡只有断了电缓存才会清空。
+（该方法没有实践过)
+
+case2：
+用DHCP请求IP 的时候发送win7的供应商类别，然后ifdown -a ; ifup -a
+（我最后用的办法)
+
+case3：
+手动绑定静态IP和DNS，然后ifdown -a; ifup -a。
+绑定IP地址：sudo ifconfig eth0 ...(ip地址)
+绑定DNS地址：手动在/etc/resolv.conf 中添加如下内容：
+nameserver ...
+（因为手动配置之前不成功，所以不清楚这个办法行不行，下次没网的时候试试）
