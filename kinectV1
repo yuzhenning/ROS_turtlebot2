@@ -18,8 +18,8 @@ SensorKinect093-Bin-Linux-x64-v5.1.2.1
 ---------------------
 这三个软件包的安装要注意顺序：先安装openni，再安装Sensor，最后安装NITE。
 另外可以带-u参数卸载这些软件包重新安装$sudo ./install.sh -u，但是NITE里有专门的uninstall.sh可以运行它来卸载。*/
-
-//下载OpenNI-Bin-Dev-Linux-x64-v1.5.7.10.tar解压得到OpenNI-Bin-Dev-Linux-x64-v1.5.7.10文件夹，我把这三个包都放在home下面的Downloads目录下
+// 安装OpenNI
+// 下载OpenNI-Bin-Dev-Linux-x64-v1.5.7.10.tar解压得到OpenNI-Bin-Dev-Linux-x64-v1.5.7.10文件夹，我把这三个包都放在home下面的Downloads目录下
 cd /Home/Downloads/OpenNI-Bin-Dev-Linux-x64-v1.5.7.10
 sudo ./install.sh
  /*
@@ -31,3 +31,32 @@ OpenNI
 DONE ***
 则安装成功
 */
+
+// 安装SensorKinect
+// 下载SensorKinect093-Bin-Linux-x64-v5.1.2.1.tar.bz2解压得到SensorKinect093-Bin-Linux-x64-v5.1.2.1文件夹放到Downloads下面
+$ cd /Home/Downloads/Sensor-Bin-Linux-x64-v5.1.2.1
+$ sudo ./install.sh
+// 
+// Installing
+// PrimeSense Sensor
+
+// 安装NITE
+// 下载NITE-Bin-Linux-x64-v1.5.2.23.tar解压得到NITE-Bin-Linux-x64-v1.5.2.23文件夹放在software下面
+
+    $ cd /Home/Downloads/NITE-Bin-Linux-x64-v1.5.2.23
+    $ sudo ./install.sh
+    
+//  Installing
+//  NITE
+
+////////////////////////
+// 运行示例 -- 链接kinect V1数据线后
+$ cd /Home/Downloads/OpenNI-Bin-Dev-Linux-x64-v1.5.7.10/Samples/Bin/x64-Release
+$ ./NiViewer 
+
+// 应该可以显示 kinect 2 个摄像头，（深度，颜色）感测结果 
+
+// OVER 
+
+
+
