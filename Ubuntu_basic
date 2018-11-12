@@ -17,7 +17,6 @@ pwd     # 显示目前的绝对路径
 man     # 显示某命令的帮助文件 
 
 1. 系统相关
-
     uname -a 显示当前系统相关信息
     sudo 临时获取超级用户权限
     su root 切换 root 用户
@@ -32,41 +31,12 @@ man     # 显示某命令的帮助文件
     sudo umount /dev/sdb1 卸载磁盘
     sudo blkid 查看磁盘分区的 UUID
     sudo vi /etc/fstab 开机自动挂载磁盘
-
-UUID=11263962-9715-473f-9421-0b604e895aaa /data ext4 defaults 0 1
-
-sudo mount -a 验证一下配置是否正确
-
-    1
-    2
-    3
-
     efibootmgr 查看系统启动顺序
     ifconfig 网络配置，IP 地址查看
     man command-name 查找命令详细手册
     command-name --help 查找某一命令的帮助
-    设置静态 IP 地址
-
-sudo vi /etc/network/interfaces
-添加以下内容
-auto enp129s0f1
-iface enp129s0f1 inet static
-address 192.168.1.254 # IP 地址
-gateway 192.168.1.1 #
-netmask 255.255.255.0 # 子网掩码
-dns-nameservers 8.8.8.8 8.8.4.4 # DNS 解析
-
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
 
 2. 用户及权限管理
-
     sudo adduser username 新添加用户
     sudo passwd root 设置 root 用户密码
     sudo vim /etc/sudoers 赋予新用户 root 权限
@@ -74,18 +44,12 @@ dns-nameservers 8.8.8.8 8.8.4.4 # DNS 解析
 # User privilege specification
 root ALL=(ALL:ALL) ALL
 username ALL=(ALL:ALL) ALL   新添加此行即可
-
-    1
-    2
-    3
-
     chown user-name filename 改变文件的所属用户
     chmod u+rwx g+r o+r filename 用户添加读写运行权限，组成员添加读权限，其他用户添加读权限
     chmod a+w filename 所有用户添加写权限
     chmod 777 filename 所有用户添加读写运行权限
 
 3. 软件安装
-
     sudo apt-get update 更新软件列表，在文件 /etc/apt/sources.list 中列出
     sudo apt-get upgrade 更新软件
     sudo apt-get install software-name 安装在软件库中的软件
@@ -102,7 +66,6 @@ username ALL=(ALL:ALL) ALL   新添加此行即可
     sudo echo "google-chrome-stable install" | sudo dpkg --set-selections 恢复更新某个软件
 
 4. 目录文件操作
-
     cd 切换目录，～为家目录，/为根目录，./为当前目录
     cd .. 切换到上级目录
     cd - 切换到上一次所在的目录
@@ -120,7 +83,6 @@ username ALL=(ALL:ALL) ALL   新添加此行即可
     tail -n 2 filename 显示文件末尾两行的内容
 
 5. 终端快捷键
-
     ctrl + l 清屏
     ctrl + c 终止命令
     ctrl + d 退出 shell
