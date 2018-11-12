@@ -1,5 +1,5 @@
 Ubuntu terminal basic command
-
+ctrl+alt+t   #　打开terminal
 sudo shutdown -r now #立刻重启
 
 cp      # 复制 
