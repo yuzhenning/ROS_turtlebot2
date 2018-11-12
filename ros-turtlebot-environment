@@ -1,0 +1,23 @@
+#配置ros-turtlebot 环境
+
+由于之前仅仅安装了ros-indigo ，没有安装turtlebot包
+现在需要介绍一下所需工作。
+
+首先，将下载源多项选择，清华，wikiros-official等选择
+
+> sudo apt-get install 
+ros-indigo-turtlebot 
+ros-indigo-turtlebot-apps 
+ros-indigo-turtlebot-interactions 
+ros-indigo-turtlebot-simulator 
+ros-indigo-kobuki-ftdi 
+ros-indigo-rocon-remocon 
+ros-indigo-rocon-qt-library 
+ros-indigo-ar-track-alvar-msgs 
+
+之后发现没有安装ros-turtlebot
+因此重新扩展资源网址。
+再次install 有turtlebot！！！
+
+！！！更新下位机笔记本-ubuntu系统请用有线网络。
+
