@@ -2,6 +2,13 @@
 # https://www.jianshu.com/p/91037cee3145
 咳咳，根据我的实践和网友的分享，问题应该是出在DHCP上了；
 可能是从windows到ubuntu，网卡缓存了一些windows的配置信息，造成了系统间配置的冲突，DHCP 请求不成功。
+#　常用指令：
+#　打开网络，断开网络(重启网卡)
+$sudo ifdown eth0 (-a)
+$sudo ifup eth0 (-a)
+#  查看网络信息
+$ethtool name (eth0/wlan0...)
+
 
 # 解决方法：
 case1：
