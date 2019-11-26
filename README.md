@@ -12,7 +12,11 @@ The robot Hardware includes :
 
 Algorithm Routine:
 Based on ROS, Simulink reading Turtlebot2 \odom, \scan, \rplidar, \camera signal.
+
 control kobuki mobile robot movements.
+
 analysis vSLAM based on jetson GPU.
+
 Implementing Trajectory Tracking, Path Following and Way-point Tracking algorithm on Turtlebot2.
+
 Optimizing navigaiton and location system based on GPU and VSLAM.
